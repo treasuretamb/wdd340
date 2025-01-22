@@ -1,0 +1,22 @@
+header {
+  padding-block: 1rem;
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr-dark);
+  padding-bottom: 1rem;
+}
+
+.logo {
+  font-size: var(--size-3xl);
+}
+
+.my-account-btn {
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  font-size: var(--size-xs);
+}

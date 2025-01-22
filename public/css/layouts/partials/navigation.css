@@ -1,0 +1,20 @@
+nav {
+  background-color: var(--clr-dark);
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-block: .5rem;
+  padding-inline: 1rem;
+  align-items: center;
+
+}
+
+nav   a {
+  text-decoration: none;
+  color: var(--clr-light);
+}

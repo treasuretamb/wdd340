@@ -1,0 +1,73 @@
+h1 {
+  font-size: clamp(1.25rem, 4vw, 3rem);
+  font-weight: bold;
+  margin-block: .5rem;
+}
+
+section {
+  color: var(--clr-dark);
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  max-width: 1200%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+
+.delorean-info {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 10;
+  transform: translate(-10px, -10px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+}
+
+.delorean-info h2 {
+  color: var(--clr-cyan);
+  font-weight: bold;
+  font-size: var(--size-xl);
+}
+
+.delorean-info ul {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--clr-cyan);
+  font-weight: bold;
+}
+
+.delorean-info ul li{
+
+  color: var(--clr-cyan);
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.delorean-info button {
+  background-color: var(--clr-cyan);
+  color: var(--clr-dark);
+  font-size: var(--size-xs);
+  font-weight: bold;
+  border-radius: 4px;
+  padding: .4rem;
+  margin-top: .2rem;
+}

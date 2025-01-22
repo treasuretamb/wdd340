@@ -1,0 +1,49 @@
+.upgrade-content h3, .reviews h3 {
+  margin-block: 1rem;
+}
+
+.section2-content {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1rem;
+}
+
+.reviews ul {
+  padding: 20px;
+}
+
+
+
+.upgrades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.upgrade {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.upgrade p {
+  font-size: var(--size-sm);
+}
+
+.upgrade-img {
+  display: flex;
+  background-color: var(--clr-cyan);
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-block: .5rem;
+}
+
+.upgrade-content img, .reviews img {
+  max-width: 100%; /* Prevent images from growing larger than their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
