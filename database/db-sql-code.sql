@@ -6,7 +6,7 @@ CREATE TYPE public.account_type AS ENUM
     ('Client', 'Employee', 'Admin');
 
 ALTER TYPE public.account_type
-    OWNER TO ces340db;
+    OWNER TO mycse340data;
 
 -- Table structure for table `classification`
 create table public.classification (
@@ -240,3 +240,14 @@ VALUES   (
     'White',
     5
   );
+
+  -- Update GM Hummer inventory record description
+
+update inventory
+set inv_description = replace(inv_description, 'the small interiors', 'a huge interior')
+where inv_make = 'GM' and inv_model = 'Hummer';
+
+-- Update file paths in inv_image and inv_thumbnail
+update inventory
+set inv_image = replace(inv_image, '/images/', '/images/vehicles/'),
+	inv_thumbnail = replace(inv_thumbnail, '/images/', '/images/vehicles/');
